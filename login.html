@@ -1,0 +1,41 @@
+<html>
+<head>
+   <title> Login </title>
+   <style>
+      .container{
+	     font-size:20px;
+		 border-collapse:seperate;
+		 border-spacing:10px;
+	     position:absolute;
+	     top:40%;
+		 left:40%;
+		 outline:5px solid black;
+	     padding:20px;
+         background-color: aquamarine;
+	  
+	   }
+	    body{
+            background-color:blueviolet;
+            
+        }
+   </style>
+</head>
+<body>
+  <div class="container" >
+   <form  action="server.php" method="post">
+        
+	 <label for="username">Username</label>
+	 <br />
+	 <input type="text" name="username" required >
+	 <br  />
+	 <label for="password">password</label>
+	 <br />
+	 <input type="password" name="password_1" required>
+     <br   />
+	
+	 <input type="submit" value="Login"  name="login">
+   </form>
+   <p>Not a user?<a href="Registration.html">register here</p> 
+</div>
+</body>
+</html>

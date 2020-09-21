@@ -1,0 +1,63 @@
+
+
+<html>
+<head>
+   <title> Registration </title>
+    <style>
+      .container{
+	     font-size:20px;
+		 border-collapse:seperate;
+		 border-spacing:10px;
+	     position:absolute;
+	     top:30%;
+		 left:40%;
+		 outline:5px solid black;
+		 padding: 20px;
+		 background-color: aquamarine;
+         
+	  
+	   }
+       .type{
+
+	   }
+
+	    body{
+            background-color:blueviolet;
+            
+        }
+   </style>
+</head>
+<body>
+  <div class="container">
+   <form  action="server.php" method="post">
+     <label>User account type</label>
+	 <br />
+	 <br />
+     <input type="radio" class="type" name="accounttype" value="customer" name="customer" ><label>Customer</label>
+     <br />
+     <input type="radio" class="type" name="accounttype" value="seller"   name="seller"><label>Seller</label>
+	 <br />
+	 <br />
+     <label for="username">Username:</label>
+	 <br />
+	 <input type="text" name="username" required>
+	 <br />
+	 <label for="emailid">Email id:</label>
+	 <br />
+	 <input type="text" name="emailid" required >
+	 <br  />
+	 <label for="password">Password:</label>
+	 <br />
+	 <input type="password" name="password_1" required>
+     <br   />
+	 <label for="password">Confirm password:</label> 
+	 <br />
+	 <input type="password" name="password_2" required>
+	 <br />
+	 <br />
+	 <input type="submit" value="Register" name="register" >
+   </form>
+   <p>already a user?<a href="login.html">log in</p> 
+</div>
+</body>
+</html>
